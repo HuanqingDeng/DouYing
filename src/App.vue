@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    你好 抖音
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,13 +10,32 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" scoped>
+.tabbar
+  position fixed
+  bottom 0
+  height 3rem
+  width 100%
+  background #000
+  display flex
+  justify-content center
+  align-items center
+  .link
+    display inline-block
+    width 3rem
+    height 2rem
+    margin-left 1.2rem
+    margin-right 0.8rem
+    font-size 19px
+    line-height 2rem
+    font-weight bolder
+    text-align center
+    text-decoration none
+    color #fff
+  .add
+    font-size 25px
+    background #fff
+    color #000
+    width 4rem
+    border-radius 12px
 </style>
