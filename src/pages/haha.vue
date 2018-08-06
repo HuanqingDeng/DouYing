@@ -1,5 +1,6 @@
 <template>
 <div class="page">
+    <div class="k" @click="$router.go(-1)">返回</div>
     <div>哈哈哈</div>
 </div>
     

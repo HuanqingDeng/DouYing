@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import index from '@/components/index'
-import notice from '@/components/notice'
-import message from '@/components/message'
-import my from '@/components/my'
+import index from '@/pages/index'
+import notice from '@/pages/notice'
+import message from '@/pages/message'
+import my from '@/pages/my'
 import home from '@/pages/home'
-import haha from '@/components/haha'
+import haha from '@/pages/haha'
 
 Vue.use(Router)
 
@@ -20,11 +20,11 @@ export default new Router({
       path: '/index',
       name: 'index',
       component: index,
-      children:[
-        {
-            path: '/index/haha',name: 'haha',component:haha
-        },
-      ]
+      // children:[
+      //   {
+      //       path: 'haha',name: 'haha',component:haha
+      //   },
+      // ]
     },
     {
       path: '/haha',name: 'haha',component:haha
@@ -42,7 +42,12 @@ export default new Router({
     {
       path: '/my',
       name: 'my',
-      component: my
+      component: my,
+      children:[
+        {
+            path: 'haha',name: 'haha',component:haha,hidden: true
+        },
+      ]
     }
   ]
 })
