@@ -2,9 +2,9 @@
   <div class="page">
       <div >
         <div class="k" @click="$router.go(-1)">返回</div>
-        <home/>
         <!-- <div class="add" @click="pus">点击进去全新的页面</div> -->
         <router-link to="/haha" >点击</router-link>
+        <home/>
       </div>
   </div>
 

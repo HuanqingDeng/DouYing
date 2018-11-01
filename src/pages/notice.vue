@@ -1,8 +1,8 @@
 <template>
   <div class="page" >
     关注关注关注
-    <home/>
     <div class="add" @click="pus">点击进去全新的页面</div>
+    <home/>
   </div>
 
 </template>

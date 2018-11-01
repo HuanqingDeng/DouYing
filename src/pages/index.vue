@@ -2,8 +2,8 @@
   <div class="page" >
     <!-- <router-link  to="/index/haha">点击进去全新的页面</router-link>
     <router-view></router-view>  -->
-    <home/>
     <div class="add" @click="pus">点击进去全新的页面</div>
+    <home/>
   </div>
 
 </template>

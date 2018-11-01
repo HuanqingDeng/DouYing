@@ -1,6 +1,5 @@
 <template>
   <div class="page" >
-    <home/>
     <div class="page_header">
       <div class="pagetitle">消息</div>
       <div class="contact">联系人></div>
@@ -52,6 +51,7 @@
         </div>
       </div>
     </div>
+    <home/>
   </div>
 
 </template>
